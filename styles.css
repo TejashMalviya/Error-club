@@ -1,0 +1,402 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: #000000;
+}
+/* Spline Viewer as background */
+spline-viewer {
+  width: 100%;
+  height: 100vh; /* Make the viewer take the full viewport height */
+  background-image: url('neon.jpg'); /* Path to the neon image */
+  background-size: cover; /* Make sure the image covers the full area */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+}
+
+.container {
+  width: 100%;
+  height: 90vh;
+  background-color: #000000;
+  background-image: url('https://www.google.com/imgres?q=pixelated%20dark%20wallpaper%20for%20coding%20club%204k%20and%20banner%20size%20image&imgurl=https%3A%2F%2Fc4.wallpaperflare.com%2Fwallpaper%2F631%2F436%2F41%2Fpixels-purple-skyline-yellow-wallpaper-preview.jpg&imgrefurl=https%3A%2F%2Fwww.wallpaperflare.com%2Fpixels-purple-skyline-yellow-pixel-art-vector-art-black-wallpaper-szped&docid=RmHOPhTrOc6keM&tbnid=YeP1NzKdl2wwJM&vet=12ahUKEwjoruiGl4OKAxXp3TQHHQyPDg4QM3oECBgQAA..i&w=728&h=410&hcb=2&ved=2ahUKEwjoruiGl4OKAxXp3TQHHQyPDg4QM3oECBgQAA');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+/* about */
+#about {
+  background-image: url('dor.jpg'); /* Replace with your image path */
+  background-size: cover; /* Makes sure the background image covers the whole section */
+  background-position: center center; /* Centers the background image */
+  background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+/* Adds space around the section content */
+  color: white; /* Changes text color to white to ensure visibility on a dark background */
+}
+
+.about-container {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+ 
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+
+h3 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+p {
+  font-size: 1.2em;
+}
+
+
+
+
+
+
+
+/* Team Section */
+.team {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.team-card {
+  perspective: 1000px;
+  width: 250px;
+  height: 300px;
+  cursor: pointer;
+}
+
+.team-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.team-card:hover .team-card-inner {
+  transform: rotateY(180deg);
+}
+
+.team-card-front, .team-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.team-card-front {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.team-card-back {
+  background: rgba(30, 30, 30, 0.9);
+  transform: rotateY(180deg);
+}
+
+.team-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-card-back a {
+  color: #1DA1F2;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.team-card-back a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+.contact-container form {
+  max-width: 400px;
+  width: 100%;
+}
+
+.contact-container input, .contact-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-container button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-container button:hover {
+  background-color: #0056b3;
+}
+/* Team Section */
+.team {
+  display: flex;               /* Align cards in a row */
+  justify-content: center;     /* Center the cards horizontally */
+  gap: 20px;                   /* Space between cards */
+  flex-wrap: nowrap;           /* Prevent wrapping to next line */
+  margin: 40px 0;
+}
+
+.team-card {
+  perspective: 1000px;
+  width: 250px;
+  height: 300px;
+  cursor: pointer;
+}
+
+.team-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.team-card:hover .team-card-inner {
+  transform: rotateY(180deg);
+}
+
+.team-card-front, .team-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.team-card-front {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.team-card-back {
+  background: rgba(30, 30, 30, 0.9);
+  transform: rotateY(180deg);
+}
+
+.team-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-card-back a {
+  color: #1DA1F2;
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+.team-card-back a:hover {
+  text-decoration: underline;
+}
+
+/* About Section */
+#about {
+  background-color: #111;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-container h2 {
+  font-size: 2.5rem;
+  color: #1DA1F2;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  filter: pixelate(10px); /* Apply pixelated effect */
+}
+
+.about-container p {
+  font-size: 1.2rem;
+  color: white;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  filter: pixelate(10px); /* Apply pixelated effect */
+}
+
+/* Pixelated Effect using CSS Filter */
+@keyframes pixelate {
+  0% {
+    filter: pixelate(0);
+  }
+  100% {
+    filter: pixelate(10px);
+  }
+}
+
+.about-container h2,
+.about-container p {
+  animation: pixelate 1s ease-in-out forwards;
+}
+
+@media screen and (max-width: 768px) {
+  .about-container h2 {
+    font-size: 2rem;
+  }
+
+  .about-container p {
+    font-size: 1rem;
+  }
+}
+
+/* h3 ke liye pixelated theme */ 
+
+.about-container h2,
+.about-container p {
+  animation: pixelate 1s ease-in-out forwards;
+}
+
+@media screen and (max-width: 768px) {
+  .about-container h2 {
+    font-size: 2rem;
+  }
+
+  .about-container p {
+    font-size: 1rem;
+  }
+}
+
+/* dfghj */
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+h1, h2 ,h3{
+  color: #ff00ff;
+}
+
+/* Welcome Section */
+.welcome {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+
+.welcome-text h1 {
+  font-size: 2.5em;
+  animation: glitch 1.5s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 2px #f00; }
+  50% { text-shadow: -2px -2px #0f0; }
+  100% { text-shadow: 2px -2px #00f; }
+}
+
+/* Team Section */
+.team {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping for small screens */
+  justify-content: center; /* Centers the cards horizontally */
+  gap: 20px; /* Spacing between cards */
+}
+
+.team-card {
+  width: 250px; /* Set a consistent width for all cards */
+  perspective: 1000px; /* Required for 3D flip effect */
+}
+
+.team-card-inner {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.team-card:hover .team-card-inner {
+  transform: rotateY(180deg);
+}
+
+.team-card-front,
+.team-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(232, 88, 88, 0.1);
+  background-color: #000000;
+}
+
+.team-card-front img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.team-card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+.team-card h1 {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.team-card p {
+  font-size: 0.9em;
+  color: #565650;
+}
