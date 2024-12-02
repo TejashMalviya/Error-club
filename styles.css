@@ -211,7 +211,7 @@ p {
 }
 
 .team-card-back {
-  background: rgba(30, 30, 30, 0.9);
+  background: rgba(0, 0, 0, 0.9);
   transform: rotateY(180deg);
 }
 
@@ -314,7 +314,7 @@ section {
 }
 
 h1, h2 ,h3{
-  color: #ff00ff;
+  color:#e4c70c;
 }
 
 /* Welcome Section */
@@ -342,7 +342,7 @@ h1, h2 ,h3{
   display: flex;
   flex-wrap: wrap; /* Allows wrapping for small screens */
   justify-content: center; /* Centers the cards horizontally */
-  gap: 20px; /* Spacing between cards */
+  gap: 45px; /* Spacing between cards */
 }
 
 .team-card {
@@ -371,7 +371,7 @@ h1, h2 ,h3{
   backface-visibility: hidden;
   border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(232, 88, 88, 0.1);
+  box-shadow: 0 4px 6px rgba(189, 43, 43, 0.1);
   background-color: #000000;
 }
 
@@ -398,5 +398,45 @@ h1, h2 ,h3{
 
 .team-card p {
   font-size: 0.9em;
-  color: #565650;
+  color: #0df388;
 }
+
+
+#blog-section {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+.post-card {
+  background-color: white;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-card h3 {
+  margin: 0;
+  font-size: 1.25em;
+  color: #333;
+}
+
+.post-card a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.post-card p {
+  color: #666;
+}
+
+.post-card small {
+  color: #999;
+  font-size: 0.875em;
+}
+
+
+
+
